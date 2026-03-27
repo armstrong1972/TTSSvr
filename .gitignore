@@ -1,0 +1,13 @@
+*.exe
+*.dll
+ehthumbs.db
+Thumbs.db
+backup
+lib
+Dlls
+bin
+temp
+obj
+Release
+Debug
+.vs

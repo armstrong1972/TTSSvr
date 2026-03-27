@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>kokoro_tts_play</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Program - async.cs" />
+    <Compile Remove="Program - ok - queue.cs" />
+    <Compile Remove="Program - ok.cs" />
+    <Compile Remove="temp.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="rq-queue.txt" />
+    <None Remove="run-kokoro-en.sh" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PortAudioSharp2" Version="*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj" />
+  </ItemGroup>
+
+</Project>
